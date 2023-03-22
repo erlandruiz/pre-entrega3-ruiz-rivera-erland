@@ -9,23 +9,23 @@
     margin: auto;
   }
   
+  /*Extend de H3 */
   .sobrenosotros .contenido-seccion h3{
-    font-size: 25px;
-    color: rgb(44, 136, 217);
-    padding: 20px 0;
-    text-transform: uppercase;
+    @extend %letraH3;
   }
+
+  /* Extend en letra en pagina Nosotros y Portfolio*/
   .sobrenosotros .contenido-seccion p{
-    font-size: 18px;
+    @extend %letraParrafoNosotrosPortfolio;
     line-height: 22px;
     margin-bottom: 50px;
-    text-align: center;
+    
   }
   
   /* Seccion datos empresariales*/
   .datos-empresariales  .columna h4{
     font-size: 23px;
-    color: rgb(44, 136, 217);
+    color: $colorLetraLogo;
     margin-bottom: 25px;
     text-align: center;
   }
@@ -34,7 +34,7 @@
   }
   .datos-empresariales  .columna ul li strong{
     display: inline-block;
-    color: rgb(44, 136, 217);
+    color: $colorLetraLogo;
     padding: 20px 0
   }
   .datos-empresariales  .columna ul {
@@ -45,11 +45,11 @@
   /* Seccion intereses*/
   
   .intereses .row .interes{
-    background-color: rgb(195, 207, 217);
+    background-color: $colorNavBar;
   
     padding: 20px;
     border-radius: 10px;
-    border: 2px rgb(44, 136, 217) solid;
+    border: 2px $colorLetraLogo solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,24 +62,24 @@
   }
   .intereses h4{
     font-size: 23px;
-    color: rgb(44, 136, 217);
+    color: $colorLetraLogo;
     margin-bottom: 25px;
     text-align: center;
   
   }
   
   .intereses .row .interes:hover {
-    background-color: #fff;
-    border: 2px black solid;
+    background-color: $colorBlanco;
+    border: 2px $colorNegro solid;
     
   }
   .intereses .row .interes i{
     font-size: 35pX;
     margin-bottom: 10px;
-    color: rgb(44, 136, 217); 
+    color: $colorLetraLogo; 
   }
   .intereses .row .interes:hover i{
-    color: black;
+    color: $colorNegro;
   
   }
   
@@ -88,22 +88,22 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-    color: rgb(44, 136, 217);
+    color: $colorLetraLogo;
    
   }
   .intereses .row .interes:hover span{
-    color: black;
+    color: $colorNegro;
   
   }
   
   
   .intereses .row .interes p{
     margin-bottom: 10px;
-    color: rgb(44, 136, 217);
+    color: $colorLetraLogo;
    
   }
   .intereses .row .interes:hover p{
-    color: black;
+    color: $colorNegro;
   
   }
   

@@ -3,12 +3,9 @@
 .servicios{
     padding: 100px 0;
   }
+  /*Extend de H3 */
   .servicios h3{
-    font-size: 25px;
-    color: rgb(44, 136, 217);
-    padding: 20px 0;
-    text-transform: uppercase;
-    text-align: center;
+    @extend %letraH3;
   
   }
   .servicios img{
@@ -48,7 +45,7 @@
   }
   .overlay i{
     font-size: 60px;
-    color: black;
+    color: $colorNegro;
     margin: 10px;
   }
   .overlay .iconos{

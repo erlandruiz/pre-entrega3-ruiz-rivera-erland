@@ -1,4 +1,6 @@
 /*abstracts*/
+/*Variables */
+/*Color*/
 /*base*/
 /*Agregar fuente*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
@@ -10,6 +12,49 @@
 
 html {
   scroll-behavior: smooth; }
+
+/*Uso de Extend*/
+/*Parametros generales de h3*/
+.sobrenosotros .contenido-seccion h3, .servicios h3, .portfolio h3 {
+  font-size: 25px;
+  color: #2c88d9;
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-align: center; }
+
+/*Parametros de  H3 de pagina nosotros*/
+.contacto .contenido-seccion h3 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 100px; }
+
+/*Parametros de letra en pagina Nosotros y Portfolio*/
+.sobrenosotros .contenido-seccion p, .portfolio-texto {
+  font-size: 20px;
+  text-align: center; }
+
+/*Parametros de boton contactar paginna Inicio y contacto*/
+#presentacion-contenido button, .contacto .contenido-seccion .fila .col button {
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  border-radius: 14px;
+  background-color: #2c88d9;
+  padding: 16px 20px;
+  color: #fff;
+  font-weight: 800;
+  display: block;
+  border: 2px #fff solid;
+  cursor: pointer; }
+
+footer .logoerland, #presentacion-contenido .presentacion h2 span {
+  font-size: 45px;
+  color: #2c88d9;
+  font-family: Haettenschweiler, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400; }
 
 /*layout*/
 /* Seccion encabezado */
@@ -44,11 +89,11 @@ html {
   justify-content: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 50%; }
 
 .iconos-redes-sociales i {
-  color: white;
+  color: #fff;
   font-size: 1.2rem; }
 
 .iconos-redes-sociales a:hover {
@@ -61,11 +106,7 @@ footer {
   padding: 0.2px; }
 
 footer .logoerland {
-  font-size: 45px;
-  color: #2c88d9;
-  font-family: Haettenschweiler, sans-serif;
-  letter-spacing: 2px;
-  font-weight: 400;
+  /*Extend de Letra de Logo Erland*/
   margin: 2px;
   padding: 2px; }
 
@@ -97,13 +138,9 @@ footer .descripcion-derechos {
   margin-bottom: 25px;
   text-align: center; }
 
+/*Extend de Letra de Logo Erland*/
 #presentacion-contenido .presentacion h2 span {
-  font-size: 45px;
-  margin: 25px;
-  color: #2c88d9;
-  font-family: Haettenschweiler, sans-serif;
-  letter-spacing: 2px;
-  font-weight: 400; }
+  margin: 25px; }
 
 #presentacion-contenido .presentacion .descripcion {
   text-align: center;
@@ -111,12 +148,7 @@ footer .descripcion-derechos {
   margin: 25px;
   font-size: 20px; }
 
-#presentacion-contenido button {
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #2c88d9;
-  font-weight: 800; }
-
+/*Extend de  boton contactar*/
 /* Seccion Adaptable responsivo */
 /* Adaptable responsivo pagina de Inicio h2 span y descripcion */
 @media screen and (max-width: 768px) {
@@ -139,17 +171,11 @@ footer .descripcion-derechos {
   max-width: 1100px;
   margin: auto; }
 
-.sobrenosotros .contenido-seccion h3 {
-  font-size: 25px;
-  color: #2c88d9;
-  padding: 20px 0;
-  text-transform: uppercase; }
-
+/*Extend de H3 */
+/* Extend en letra en pagina Nosotros y Portfolio*/
 .sobrenosotros .contenido-seccion p {
-  font-size: 18px;
   line-height: 22px;
-  margin-bottom: 50px;
-  text-align: center; }
+  margin-bottom: 50px; }
 
 /* Seccion datos empresariales*/
 .datos-empresariales .columna h4 {
@@ -193,7 +219,7 @@ footer .descripcion-derechos {
 
 .intereses .row .interes:hover {
   background-color: #fff;
-  border: 2px black solid; }
+  border: 2px #000 solid; }
 
 .intereses .row .interes i {
   font-size: 35pX;
@@ -201,7 +227,7 @@ footer .descripcion-derechos {
   color: #2c88d9; }
 
 .intereses .row .interes:hover i {
-  color: black; }
+  color: #000; }
 
 .intereses .row .interes span {
   font-size: 18px;
@@ -211,14 +237,14 @@ footer .descripcion-derechos {
   color: #2c88d9; }
 
 .intereses .row .interes:hover span {
-  color: black; }
+  color: #000; }
 
 .intereses .row .interes p {
   margin-bottom: 10px;
   color: #2c88d9; }
 
 .intereses .row .interes:hover p {
-  color: black; }
+  color: #000; }
 
 /* Seccion Adaptable responsivo */
 /* Adaptable responsivo pagina sobre nosotros datos-empresariales  */
@@ -230,13 +256,7 @@ footer .descripcion-derechos {
 .servicios {
   padding: 100px 0; }
 
-.servicios h3 {
-  font-size: 25px;
-  color: #2c88d9;
-  padding: 20px 0;
-  text-transform: uppercase;
-  text-align: center; }
-
+/*Extend de H3 */
 .servicios img {
   height: 100%;
   width: 100%;
@@ -272,7 +292,7 @@ footer .descripcion-derechos {
 
 .overlay i {
   font-size: 60px;
-  color: black;
+  color: #000;
   margin: 10px; }
 
 .overlay .iconos {
@@ -290,13 +310,7 @@ footer .descripcion-derechos {
 .portfolio {
   padding: 100px 0; }
 
-.portfolio h3 {
-  font-size: 25px;
-  color: #2c88d9;
-  padding: 20px 0;
-  text-transform: uppercase;
-  text-align: center; }
-
+/*Extend de H3 */
 .portfolio .carousel {
   max-width: 800px; }
 
@@ -314,10 +328,9 @@ footer .descripcion-derechos {
 .portfolio-imagen {
   margin: 10px 10px 20px 10px; }
 
+/* Extend en letra en pagina Nosotros y Portfolio*/
 .portfolio-texto {
-  max-width: 70%;
-  font-size: 20px;
-  text-align: center; }
+  max-width: 70%; }
 
 .portfolio-info {
   font-weight: bold;
@@ -362,13 +375,7 @@ footer .descripcion-derechos {
       margin: auto;
       align-items: center; */ }
 
-.contacto .contenido-seccion h3 {
-  text-align: center;
-  font-size: 25px;
-  text-transform: uppercase;
-  color: #fff;
-  padding-bottom: 100px; }
-
+/*Extend de H3 */
 .contacto .contenido-seccion .fila {
   display: flex; }
 
@@ -384,19 +391,7 @@ footer .descripcion-derechos {
   margin-bottom: 20px;
   font-size: 18px; }
 
-.contacto .contenido-seccion .fila .col button {
-  text-decoration: none;
-  list-style: none;
-  text-transform: uppercase;
-  border-radius: 14px;
-  background-color: #2c88d9;
-  padding: 16px 20px;
-  color: #fff;
-  font-weight: 800;
-  display: block;
-  border: 2px #fff solid;
-  cursor: pointer; }
-
+/*Extend de  boton contactar*/
 .contacto .contenido-seccion .fila .col img {
   width: 100%; }
 

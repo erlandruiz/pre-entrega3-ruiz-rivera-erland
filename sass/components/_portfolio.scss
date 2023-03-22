@@ -2,12 +2,10 @@
 .portfolio{
     padding: 100px 0;
   }
+  /*Extend de H3 */
   .portfolio h3{
-    font-size: 25px;
-    color: rgb(44, 136, 217);
-    padding: 20px 0;
-    text-transform: uppercase;
-    text-align: center;
+    @extend %letraH3;
+  
   }
   .portfolio .carousel{
     max-width: 800px;
@@ -30,10 +28,11 @@
   
     margin: 10px 10px 20px 10px;
   }
+
+  /* Extend en letra en pagina Nosotros y Portfolio*/
   .portfolio-texto{
+    @extend %letraParrafoNosotrosPortfolio;
     max-width: 70%;
-    font-size: 20px;
-    text-align: center;
   }
   .portfolio-info{
     font-weight: bold;

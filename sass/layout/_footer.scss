@@ -3,11 +3,8 @@ footer{
     padding: 0.2px;
 }
 footer .logoerland{
-    font-size: 45px;
-    color: rgb(44, 136, 217);
-    font-family:  Haettenschweiler, sans-serif;
-    letter-spacing: 2px;
-    font-weight: 400;
+    /*Extend de Letra de Logo Erland*/
+    @extend %logoErland;
     margin: 2px;
     padding: 2px;
 }

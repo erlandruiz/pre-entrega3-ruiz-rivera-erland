@@ -8,7 +8,7 @@
   
   #presentacion-contenido .presentacion{
     max-width: 1100px;
-    color: #fff;
+    color:$colorBlanco;
     margin: auto;
     height: 100vh;
   }
@@ -23,13 +23,11 @@
     margin-bottom: 25px;
     text-align: center; 
   }
+
+  /*Extend de Letra de Logo Erland*/
   #presentacion-contenido .presentacion h2 span{
-    font-size: 45px;
+    @extend %logoErland;
     margin: 25px;
-    color: rgb(44, 136, 217);
-    font-family:  Haettenschweiler, sans-serif;
-    letter-spacing: 2px;
-    font-weight: 400;
   }
 
   #presentacion-contenido .presentacion .descripcion{
@@ -38,11 +36,10 @@
     margin: 25px;
     font-size: 20px;
   }
+
+  /*Extend de  boton contactar*/
   #presentacion-contenido button{
-    text-transform: uppercase;
-    color: #fff;
-    background-color: rgb(44, 136, 217);
-    font-weight: 800;
+    @extend %buttonContactar;
   }
   /* Seccion Adaptable responsivo */
   /* Adaptable responsivo pagina de Inicio h2 span y descripcion */
