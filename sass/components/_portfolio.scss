@@ -2,9 +2,9 @@
 .portfolio{
     padding: 100px 0;
   }
-  /*Extend de H3 */
+  /*Mixin de H3 */
   .portfolio h3{
-    @extend %letraH3;
+    @include letraH3($colorLetraLogo);
   
   }
   .portfolio .carousel{

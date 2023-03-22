@@ -22,9 +22,9 @@
       align-items: center; */
      
     }
-    /*Extend de H3 */
+    /*Mixin de H3 */
     .contacto .contenido-seccion h3{
-      @extend %letraH3Nosotros;
+      @include letraH3($colorBlanco)
     
     }
     .contacto .contenido-seccion .fila{

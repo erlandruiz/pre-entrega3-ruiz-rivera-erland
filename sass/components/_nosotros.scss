@@ -9,9 +9,9 @@
     margin: auto;
   }
   
-  /*Extend de H3 */
+  /*Mixin de H3 */
   .sobrenosotros .contenido-seccion h3{
-    @extend %letraH3;
+    @include letraH3($colorLetraLogo);
   }
 
   /* Extend en letra en pagina Nosotros y Portfolio*/
