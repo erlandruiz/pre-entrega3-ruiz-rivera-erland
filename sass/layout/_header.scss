@@ -1,13 +1,16 @@
 /* Seccion encabezado */
 
+
+/*Aplicando nesting*/
 .navbar{
     padding: 0.5rem;
     background-color: $colorNavBar;
+    .navbar-collapse{
+      align-items: center;
+      justify-content: space-between;
+    }
   }
-  .navbar-collapse{
-    align-items: center;
-    justify-content: space-between;
-  }
+ 
   .navbar .navbar-brand h1{
     color: $colorLetraLogo;
     font-family:  Haettenschweiler, sans-serif;
@@ -15,16 +18,23 @@
     text-align: center;
   }
 
+
+
+  /*Aplicando nesting*/
+
   .nav-item a{
     color: $colorLetraLogo;
     font-weight: 400;
     font-size: 20px;
-  }
-  .nav-item a:hover{
-    color: $colorLetraLogo;
+    &:hover{
+      color: $colorBlanco;
+    }
+
   }
 
+
   /* Seccion encabezado iconos-redes-sociales */
+  /*Aplicando nesting*/
   .iconos-redes-sociales a{
     width: 50px;
     height: 50px;
@@ -36,14 +46,17 @@
     border: 2px solid $colorBlanco;
     border-radius: 50%;
 
+    &:hover{
+      border: 2px solid $colorLetraLogo;
+
+    }
+
   }
   .iconos-redes-sociales i{
     color: $colorBlanco;
     font-size: 1.2rem;
   }
-  .iconos-redes-sociales a:hover{
-    border: 2px solid $colorLetraLogo;
-  }
+ 
   .iconos-redes-sociales a:hover i{
     color:$colorLetraLogo ;
   }

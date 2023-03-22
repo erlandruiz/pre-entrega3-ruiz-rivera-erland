@@ -1,28 +1,31 @@
 /* Seccion portfolio */
+/*Aplicando Nesting*/
 .portfolio{
     padding: 100px 0;
-  }
-  /*Mixin de H3 */
-  .portfolio h3{
-    @include letraH3($colorLetraLogo);
-  
-  }
-  .portfolio .carousel{
-    max-width: 800px;
+    /*Mixin de H3 */
+    h3{
+      @include letraH3($colorLetraLogo);
     
+    }
+    .carousel{
+      max-width: 800px;
+    }
   }
+
+ /*Aplicando Nesting*/
   .carousel-item{
     height: 500px;
+    .container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
   
-  .carousel-item .container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  
   
   .portfolio-imagen{
   
@@ -34,20 +37,25 @@
     @extend %letraParrafoNosotrosPortfolio;
     max-width: 70%;
   }
+
+  /*Aplicando Nesting*/
   .portfolio-info{
     font-weight: bold;
     text-align: center;
+    p{
+      margin-bottom: 0;
+    }
+    .cliente{
+      font-size: 22px;
+    }
+    .cargo{
+      font-size: 14px;
+      
+    }
+
   }
-  .portfolio-info p{
-    margin-bottom: 0;
-  }
-  .portfolio-info .cliente{
-    font-size: 22px;
-  }
-  .portfolio-info .cargo{
-    font-size: 14px;
-    
-  }
+ 
+
   
 
   

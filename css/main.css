@@ -44,13 +44,13 @@ footer .logoerland, #presentacion-contenido .presentacion h2 span {
 
 /*layout*/
 /* Seccion encabezado */
+/*Aplicando nesting*/
 .navbar {
   padding: 0.5rem;
   background-color: #c3cfd9; }
-
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between; }
+  .navbar .navbar-collapse {
+    align-items: center;
+    justify-content: space-between; }
 
 .navbar .navbar-brand h1 {
   color: #2c88d9;
@@ -58,15 +58,16 @@ footer .logoerland, #presentacion-contenido .presentacion h2 span {
   letter-spacing: 2px;
   text-align: center; }
 
+/*Aplicando nesting*/
 .nav-item a {
   color: #2c88d9;
   font-weight: 400;
   font-size: 20px; }
-
-.nav-item a:hover {
-  color: #2c88d9; }
+  .nav-item a:hover {
+    color: #fff; }
 
 /* Seccion encabezado iconos-redes-sociales */
+/*Aplicando nesting*/
 .iconos-redes-sociales a {
   width: 50px;
   height: 50px;
@@ -77,56 +78,53 @@ footer .logoerland, #presentacion-contenido .presentacion h2 span {
   margin: 10px;
   border: 2px solid #fff;
   border-radius: 50%; }
+  .iconos-redes-sociales a:hover {
+    border: 2px solid #2c88d9; }
 
 .iconos-redes-sociales i {
   color: #fff;
   font-size: 1.2rem; }
 
-.iconos-redes-sociales a:hover {
-  border: 2px solid #2c88d9; }
-
 .iconos-redes-sociales a:hover i {
   color: #2c88d9; }
 
+/*Aplicando Nesting*/
 footer {
   padding: 0.2px; }
-
-footer .logoerland {
-  /*Extend de Letra de Logo Erland*/
-  margin: 2px;
-  padding: 2px; }
-
-footer .descripcion-derechos {
-  text-align: center; }
+  footer .logoerland {
+    /*Extend de Letra de Logo Erland*/
+    margin: 2px;
+    padding: 2px; }
+  footer .descripcion-derechos {
+    text-align: center; }
 
 /*components*/
 /* Seccion pagina de inicio */
+/*Aplicando Nesting*/
 #presentacion-contenido {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/fondo-inicio.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh; }
+  #presentacion-contenido .presentacion {
+    max-width: 1100px;
+    color: #fff;
+    margin: auto;
+    height: 100vh; }
+    #presentacion-contenido .presentacion .bienvenida {
+      letter-spacing: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
 
-#presentacion-contenido .presentacion {
-  max-width: 1100px;
-  color: #fff;
-  margin: auto;
-  height: 100vh; }
-
-#presentacion-contenido .presentacion .bienvenida {
-  letter-spacing: 5px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  text-transform: uppercase; }
-
+/*Aplicando Nesting*/
 #presentacion-contenido .presentacion h2 {
   font-size: 47px;
   margin-bottom: 25px;
-  text-align: center; }
-
-/*Extend de Letra de Logo Erland*/
-#presentacion-contenido .presentacion h2 span {
-  margin: 25px; }
+  text-align: center;
+  /*Extend de Letra de Logo Erland*/ }
+  #presentacion-contenido .presentacion h2 span {
+    margin: 25px; }
 
 #presentacion-contenido .presentacion .descripcion {
   text-align: center;
@@ -150,12 +148,12 @@ footer .descripcion-derechos {
     font-size: 18px; } }
 
 /* Seccion sobrenosotros */
+/*Aplicando Nesting*/
 .sobrenosotros {
   padding: 100px 0; }
-
-.sobrenosotros .contenido-seccion {
-  max-width: 1100px;
-  margin: auto; }
+  .sobrenosotros .contenido-seccion {
+    max-width: 1100px;
+    margin: auto; }
 
 /*Mixin de H3 */
 .sobrenosotros .contenido-seccion h3 {
@@ -171,23 +169,23 @@ footer .descripcion-derechos {
   margin-bottom: 50px; }
 
 /* Seccion datos empresariales*/
-.datos-empresariales .columna h4 {
-  font-size: 23px;
-  color: #2c88d9;
-  margin-bottom: 25px;
-  text-align: center; }
-
+/*Aplicando Nesting*/
 .columna {
   margin-bottom: 40px; }
+  .columna h4 {
+    font-size: 23px;
+    color: #2c88d9;
+    margin-bottom: 25px;
+    text-align: center; }
 
-.datos-empresariales .columna ul li strong {
-  display: inline-block;
-  color: #2c88d9;
-  padding: 20px 0; }
-
+/*Aplicando Nesting*/
 .datos-empresariales .columna ul {
   list-style: none;
   text-align: center; }
+  .datos-empresariales .columna ul li strong {
+    display: inline-block;
+    color: #2c88d9;
+    padding: 20px 0; }
 
 /* Seccion intereses*/
 .intereses .row .interes {
@@ -246,27 +244,27 @@ footer .descripcion-derechos {
     text-align: center; } }
 
 /* Seccion Servicios */
+/*Aplicando Nesting*/
 .servicios {
-  padding: 100px 0; }
-
-/*Mixin de H3 */
-.servicios h3 {
-  font-size: 25px;
-  color: #2c88d9;
-  padding: 20px 0;
-  text-transform: uppercase;
-  text-align: center; }
-
-.servicios img {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  display: block;
-  transition: all 0.2s ease; }
+  padding: 100px 0;
+  /*Mixin de H3 */ }
+  .servicios h3 {
+    font-size: 25px;
+    color: #2c88d9;
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center; }
+  .servicios img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    transition: all 0.2s ease; }
 
 .servicios-contenedor {
   margin-bottom: 40px; }
 
+/*Aplicando Nesting*/
 .overlay {
   transition: all 0.2s ease;
   opacity: 0;
@@ -275,11 +273,16 @@ footer .descripcion-derechos {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
-
-.overlay p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0; }
+  .overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0; }
+  .overlay i {
+    font-size: 60px;
+    color: #000;
+    margin: 10px; }
+  .overlay .iconos {
+    display: flex; }
 
 .servicio {
   position: relative; }
@@ -290,14 +293,6 @@ footer .descripcion-derechos {
 .servicio:hover .overlay {
   opacity: 1; }
 
-.overlay i {
-  font-size: 60px;
-  color: #000;
-  margin: 10px; }
-
-.overlay .iconos {
-  display: flex; }
-
 /* Seccion Adaptable responsivo */
 /* Adaptable responsivo pagina servicios  iconos de github y crome  */
 @media screen and (max-width: 576px) {
@@ -307,30 +302,29 @@ footer .descripcion-derechos {
     font-size: 16px; } }
 
 /* Seccion portfolio */
+/*Aplicando Nesting*/
 .portfolio {
-  padding: 100px 0; }
+  padding: 100px 0;
+  /*Mixin de H3 */ }
+  .portfolio h3 {
+    font-size: 25px;
+    color: #2c88d9;
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center; }
+  .portfolio .carousel {
+    max-width: 800px; }
 
-/*Mixin de H3 */
-.portfolio h3 {
-  font-size: 25px;
-  color: #2c88d9;
-  padding: 20px 0;
-  text-transform: uppercase;
-  text-align: center; }
-
-.portfolio .carousel {
-  max-width: 800px; }
-
+/*Aplicando Nesting*/
 .carousel-item {
   height: 500px; }
-
-.carousel-item .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 .portfolio-imagen {
   margin: 10px 10px 20px 10px; }
@@ -339,18 +333,16 @@ footer .descripcion-derechos {
 .portfolio-texto {
   max-width: 70%; }
 
+/*Aplicando Nesting*/
 .portfolio-info {
   font-weight: bold;
   text-align: center; }
-
-.portfolio-info p {
-  margin-bottom: 0; }
-
-.portfolio-info .cliente {
-  font-size: 22px; }
-
-.portfolio-info .cargo {
-  font-size: 14px; }
+  .portfolio-info p {
+    margin-bottom: 0; }
+  .portfolio-info .cliente {
+    font-size: 22px; }
+  .portfolio-info .cargo {
+    font-size: 14px; }
 
 /* Seccion Adaptable responsivo */
 /* Adaptable responsivo pagina de portfolio carousel */

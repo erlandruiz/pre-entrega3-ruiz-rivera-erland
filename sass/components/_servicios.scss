@@ -1,24 +1,29 @@
 /* Seccion Servicios */
-
+/*Aplicando Nesting*/
 .servicios{
     padding: 100px 0;
+    /*Mixin de H3 */
+    h3{
+      @include letraH3($colorLetraLogo);
+    
+    }
+
+    img{
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      display: block;
+      transition: all 0.2s ease;
+    }
+    
   }
-  /*Mixin de H3 */
-  .servicios h3{
-    @include letraH3($colorLetraLogo);
   
-  }
-  .servicios img{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    display: block;
-    transition: all 0.2s ease;
-  }
-  
+ 
   .servicios-contenedor{
     margin-bottom: 40px;
   }
+
+  /*Aplicando Nesting*/
   .overlay{
     transition: all 0.2s ease;
     opacity: 0;
@@ -27,12 +32,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    p{
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    i{
+      font-size: 60px;
+      color: $colorNegro;
+      margin: 10px;
+    }
+    .iconos{
+      display: flex;
+    }
+
+
   }
-  .overlay p{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
+   
   .servicio{
     position: relative;
   }
@@ -43,14 +59,8 @@
   .servicio:hover .overlay{
     opacity: 1;
   }
-  .overlay i{
-    font-size: 60px;
-    color: $colorNegro;
-    margin: 10px;
-  }
-  .overlay .iconos{
-    display: flex;
-  }
+  
+  
 
   /* Seccion Adaptable responsivo */
 

@@ -1,13 +1,15 @@
 /* Seccion sobrenosotros */
+/*Aplicando Nesting*/
 .sobrenosotros{
     padding: 100px 0;
+   .contenido-seccion{
+      max-width: 1100px;
+      margin: auto;
+    }
     
     
   }
-  .sobrenosotros .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-  }
+  
   
   /*Mixin de H3 */
   .sobrenosotros .contenido-seccion h3{
@@ -23,23 +25,31 @@
   }
   
   /* Seccion datos empresariales*/
-  .datos-empresariales  .columna h4{
-    font-size: 23px;
-    color: $colorLetraLogo;
-    margin-bottom: 25px;
-    text-align: center;
-  }
+
+  /*Aplicando Nesting*/
+  
   .columna {
     margin-bottom: 40px;
+    h4{
+      font-size: 23px;
+      color: $colorLetraLogo;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
   }
-  .datos-empresariales  .columna ul li strong{
-    display: inline-block;
-    color: $colorLetraLogo;
-    padding: 20px 0
-  }
+
+
+  
+  /*Aplicando Nesting*/
   .datos-empresariales  .columna ul {
     list-style: none;
     text-align: center;
+    li strong{
+      display: inline-block;
+      color: $colorLetraLogo;
+      padding: 20px 0
+    }
   }
   
   /* Seccion intereses*/

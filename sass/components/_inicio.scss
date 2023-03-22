@@ -1,34 +1,45 @@
  /* Seccion pagina de inicio */
+ /*Aplicando Nesting*/
  #presentacion-contenido{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../assets/img/fondo-inicio.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
+
+
+    .presentacion{
+      max-width: 1100px;
+      color:$colorBlanco;
+      margin: auto;
+      height: 100vh;
+      .bienvenida{
+        letter-spacing: 5px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+    }
+
   }
   
-  #presentacion-contenido .presentacion{
-    max-width: 1100px;
-    color:$colorBlanco;
-    margin: auto;
-    height: 100vh;
-  }
-  #presentacion-contenido .presentacion .bienvenida{
-    letter-spacing: 5px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+ 
+  /*Aplicando Nesting*/
   #presentacion-contenido .presentacion h2{
     font-size: 47px;
     margin-bottom: 25px;
-    text-align: center; 
+    text-align: center;
+
+     /*Extend de Letra de Logo Erland*/
+     span{
+      @extend %logoErland;
+      margin: 25px;
+    }
+    
   }
 
-  /*Extend de Letra de Logo Erland*/
-  #presentacion-contenido .presentacion h2 span{
-    @extend %logoErland;
-    margin: 25px;
-  }
+ 
+
 
   #presentacion-contenido .presentacion .descripcion{
     text-align: center;
