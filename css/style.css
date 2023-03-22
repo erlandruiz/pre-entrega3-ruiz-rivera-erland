@@ -10,144 +10,14 @@
 
 
 
-/* Seccion Contacto */
-.contacto{
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/img/fondocontacto.png");
-    background-size: cover;
-    color: #fff;
-    padding: 100px 0;
-    display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-   
-   
-  }
-  .contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    margin: auto;
-    align-items: center; */
-   
-  }
-  .contacto .contenido-seccion h3{
-    text-align: center;
-    font-size: 25px;
-    text-transform: uppercase;
-    color: #fff;
-    padding-bottom: 100px;
-  
-  }
-  .contacto .contenido-seccion .fila{
-    display: flex;
-  }
-  .contacto .contenido-seccion .fila .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-  }
-  
-  .contacto .contenido-seccion .fila .col input, .contacto .contenido-seccion .fila .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  .contacto .contenido-seccion .fila .col button{
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-    border-radius: 14px;
-    background-color: rgb(44, 136, 217) ;
-    padding: 16px 20px;
-    color: #fff;
-    font-weight: 800;
-    display: block;
-    border: 2px #fff solid;
-    cursor: pointer;
-  }
-  .contacto .contenido-seccion .fila .col img{
-    width: 100%;
-  }
-  .contacto .contenido-seccion .fila .col .info{
-    position: absolute;
-    background-color: #000;
-    padding: 20px;
-    width: fit-content;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-  }
-  .contacto .contenido-seccion .fila .col .info ul{
-    list-style: none;
-  }
-  .contacto .contenido-seccion .fila .col .info ul li{
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-  .contacto  .contenido-seccion .fila .col .info ul li i{
-    color: rgb(44, 136, 217);
-    display: inline-block;
-    margin-right: 5px;
-  }
-
-  /* Seccion responsivo pagina de contacto */
-@media screen and (max-width:768px) {
-    .contacto .contenido-seccion .fila{
-      display: block;
-    }
-    .contacto .contenido-seccion .fila .col{
-      width: 100%;
-    }
-  }
-  
 
 /* Seccion Adaptable responsivo */
 
-/* Adaptable responsivo pagina de Inicio h2 span y descripcion */
 
-@media screen and (max-width:768px){
-  #presentacion-contenido .presentacion h2{
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-align: center; 
-  }
-  #presentacion-contenido .presentacion h2 span{
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-  #presentacion-contenido .presentacion .descripcion{
-  
-    margin: 20px;
-    font-size: 18px;
-  }
-}
 
-/* Adaptable responsivo pagina sobre nosotros datos-empresariales  */
-@media screen and (max-width:992px) {
-  .datos-intereses .datos-empresariales-interes{
-    text-align: center;
-  }
-  
-}
 
-/* Adaptable responsivo pagina servicios  iconos de github y crome  */
-@media screen and (max-width:576px) {
-  .overlay i{
-    font-size: 35px;
-    
-  }
-  .overlay p{
-    font-size: 16px;
-    
-  }
-  
-}
+
+
 
 /* Adaptable responsivo pagina de portfolio carousel */
 @media screen and (max-width:576px){

@@ -83,3 +83,18 @@
       display: inline-block;
       margin-right: 5px;
     }
+
+
+    
+/* Seccion Adaptable responsivo */
+
+  /* Seccion responsivo pagina de contacto */
+@media screen and (max-width:768px) {
+    .contacto .contenido-seccion .fila{
+      display: block;
+    }
+    .contacto .contenido-seccion .fila .col{
+      width: 100%;
+    }
+  }
+  

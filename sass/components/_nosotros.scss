@@ -106,3 +106,13 @@
     color: black;
   
   }
+  
+  /* Seccion Adaptable responsivo */
+
+  /* Adaptable responsivo pagina sobre nosotros datos-empresariales  */
+@media screen and (max-width:992px) {
+  .datos-intereses .datos-empresariales-interes{
+    text-align: center;
+  }
+  
+}

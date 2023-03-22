@@ -117,6 +117,20 @@ footer .descripcion-derechos {
   background-color: #2c88d9;
   font-weight: 800; }
 
+/* Seccion Adaptable responsivo */
+/* Adaptable responsivo pagina de Inicio h2 span y descripcion */
+@media screen and (max-width: 768px) {
+  #presentacion-contenido .presentacion h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center; }
+  #presentacion-contenido .presentacion h2 span {
+    font-size: 35px;
+    margin-bottom: 20px; }
+  #presentacion-contenido .presentacion .descripcion {
+    margin: 20px;
+    font-size: 18px; } }
+
 /* Seccion sobrenosotros */
 .sobrenosotros {
   padding: 100px 0; }
@@ -206,6 +220,12 @@ footer .descripcion-derechos {
 .intereses .row .interes:hover p {
   color: black; }
 
+/* Seccion Adaptable responsivo */
+/* Adaptable responsivo pagina sobre nosotros datos-empresariales  */
+@media screen and (max-width: 992px) {
+  .datos-intereses .datos-empresariales-interes {
+    text-align: center; } }
+
 /* Seccion Servicios */
 .servicios {
   padding: 100px 0; }
@@ -258,6 +278,14 @@ footer .descripcion-derechos {
 .overlay .iconos {
   display: flex; }
 
+/* Seccion Adaptable responsivo */
+/* Adaptable responsivo pagina servicios  iconos de github y crome  */
+@media screen and (max-width: 576px) {
+  .overlay i {
+    font-size: 35px; }
+  .overlay p {
+    font-size: 16px; } }
+
 /* Seccion portfolio */
 .portfolio {
   padding: 100px 0; }
@@ -303,6 +331,16 @@ footer .descripcion-derechos {
 
 .portfolio-info .cargo {
   font-size: 14px; }
+
+/* Seccion Adaptable responsivo */
+/* Adaptable responsivo pagina de portfolio carousel */
+@media screen and (max-width: 576px) {
+  .portfolio-texto {
+    font-size: 16px; }
+  .portfolio-info .cliente {
+    font-size: 18px; }
+  .portfolio-info .cargo {
+    font-size: 12px; } }
 
 /* Seccion Contacto */
 .contacto {
@@ -382,3 +420,11 @@ footer .descripcion-derechos {
   color: #2c88d9;
   display: inline-block;
   margin-right: 5px; }
+
+/* Seccion Adaptable responsivo */
+/* Seccion responsivo pagina de contacto */
+@media screen and (max-width: 768px) {
+  .contacto .contenido-seccion .fila {
+    display: block; }
+  .contacto .contenido-seccion .fila .col {
+    width: 100%; } }

@@ -44,3 +44,22 @@
     background-color: rgb(44, 136, 217);
     font-weight: 800;
   }
+  /* Seccion Adaptable responsivo */
+  /* Adaptable responsivo pagina de Inicio h2 span y descripcion */
+
+@media screen and (max-width:768px){
+  #presentacion-contenido .presentacion h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  #presentacion-contenido .presentacion h2 span{
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  #presentacion-contenido .presentacion .descripcion{
+  
+    margin: 20px;
+    font-size: 18px;
+  }
+}
