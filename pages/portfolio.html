@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Erland Ruiz Rivera" />
+    <meta
+      name="description"
+      content="Proyecto de CoderHouse desarrollo Web Erland Ruiz Rivera"
+    />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titulo -->
+    <title>Proyecto Erland Ruiz Rivera</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icono.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Google fonts -->
+  </head>
+  <body>
+    <!-- Seccion encabezado -->
+    <section id="inicio"> 
+        
+        <!-- NavBar de bootstrap -->
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-toggler"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+              <a class="navbar-brand" href="#">
+                <h1>Erland</h1>
+              </a>
+              <ul
+                class="navbar-nav d-flex justify-content-center align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <!-- Iconos de redes Sociales dentro de Nav -->
+              <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://es-la.facebook.com//" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Seccion Portfolio -->
+    <section id="portfolio" class="portfolio d-flex justify-content-center flex-column align-items-center">
+        <h3>Portfolio</h3>
+
+        <!-- En esta seccion portfolio colocamos un carousel de Bootstrap modificando el portfolio anterior -->
+
+        <div id="portfolio-carousel" class="carousel slide carousel-dark">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <img src="../assets/img/petrolera.svg" class="portfolio-imagen rounded-circle " alt="Industria Petrolera">
+                    <p class="portfolio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.</p>
+                    <div class="portfolio-info">
+                        <p class="cliente">Industria Petrolera</p>
+                        <p class="cargo">OilGas Company</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img src="../assets/img/mineria.svg" class="portfolio-imagen rounded-circle " alt="Industria Minera">
+                    <p class="portfolio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.</p>
+                    <div class="portfolio-info">
+                        <p class="cliente">Industria Minera</p>
+                        <p class="cargo">Gold Company</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img src="../assets/img/naviera.svg" class="portfolio-imagen rounded-circle " alt="Industria Naviera">
+                    <p class="portfolio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.</p>
+                    <div class="portfolio-info">
+                        <p class="cliente">Industria Naviera</p>
+                        <p class="cargo">Ship Company</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img src="../assets/img/pesquera.svg" class="portfolio-imagen rounded-circle " alt="Industria Pesquera">
+                    <p class="portfolio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.</p>
+                    <div class="portfolio-info">
+                        <p class="cliente">Industria Pesquera</p>
+                        <p class="cargo">Fish Company</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img src="../assets/img/calzado.svg" class="portfolio-imagen rounded-circle " alt="Industria del calzado">
+                    <p class="portfolio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.voluptatibus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.</p>
+                    <div class="portfolio-info">
+                        <p class="cliente">Industria del Calzado</p>
+                        <p class="cargo">Shoes Company</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img src="../assets/img/textil.svg" class="portfolio-imagen rounded-circle " alt="Industria Textil">
+                    <p class="portfolio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor culpa vitae, voluptatibus.</p>
+                    <div class="portfolio-info">
+                        <p class="cliente">Industria Textil</p>
+                        <p class="cargo">Fabrics Company</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolio-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolio-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+       
+    </section>
+
+
+
+
+    
+     <!-- Seccion footer -->
+     <footer class="footer d-flex align-items-center justify-content-center flex-column">
+      <p class="logoerland">Erland</p>
+      <p class="descripcion-derechos">Todos los derechos reservados-2023 © Desarrollado por Erland Ruiz</p>
+     
+    </footer>
+
+
+
+
+    
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+/*abstracts*/
+/*base*/
+/*Agregar fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+/*Estilo universal para evitar conflictos con Padding y margin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+/*layout*/
+/* Seccion encabezado */
+.navbar {
+  padding: 0.5rem;
+  background-color: #c3cfd9; }
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between; }
+
+.navbar .navbar-brand h1 {
+  color: #2c88d9;
+  font-family: Haettenschweiler, sans-serif;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.nav-item a {
+  color: #2c88d9;
+  font-weight: 400;
+  font-size: 20px; }
+
+.nav-item a:hover {
+  color: #2c88d9; }
+
+/* Seccion encabezado iconos-redes-sociales */
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%; }
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.2rem; }
+
+.iconos-redes-sociales a:hover {
+  border: 2px solid #2c88d9; }
+
+.iconos-redes-sociales a:hover i {
+  color: #2c88d9; }
+
+footer {
+  padding: 0.2px; }
+
+footer .logoerland {
+  font-size: 45px;
+  color: #2c88d9;
+  font-family: Haettenschweiler, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 2px;
+  padding: 2px; }
+
+footer .descripcion-derechos {
+  text-align: center; }
+
+/*components*/
+/* Seccion pagina de inicio */
+#presentacion-contenido {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/fondo-inicio.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh; }
+
+#presentacion-contenido .presentacion {
+  max-width: 1100px;
+  color: #fff;
+  margin: auto;
+  height: 100vh; }
+
+#presentacion-contenido .presentacion .bienvenida {
+  letter-spacing: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+#presentacion-contenido .presentacion h2 {
+  font-size: 47px;
+  margin-bottom: 25px;
+  text-align: center; }
+
+#presentacion-contenido .presentacion h2 span {
+  font-size: 45px;
+  margin: 25px;
+  color: #2c88d9;
+  font-family: Haettenschweiler, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+#presentacion-contenido .presentacion .descripcion {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px;
+  font-size: 20px; }
+
+#presentacion-contenido button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2c88d9;
+  font-weight: 800; }
+
+/* Seccion sobrenosotros */
+.sobrenosotros {
+  padding: 100px 0; }
+
+.sobrenosotros .contenido-seccion {
+  max-width: 1100px;
+  margin: auto; }
+
+.sobrenosotros .contenido-seccion h3 {
+  font-size: 25px;
+  color: #2c88d9;
+  padding: 20px 0;
+  text-transform: uppercase; }
+
+.sobrenosotros .contenido-seccion p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 50px;
+  text-align: center; }
+
+/* Seccion datos empresariales*/
+.datos-empresariales .columna h4 {
+  font-size: 23px;
+  color: #2c88d9;
+  margin-bottom: 25px;
+  text-align: center; }
+
+.columna {
+  margin-bottom: 40px; }
+
+.datos-empresariales .columna ul li strong {
+  display: inline-block;
+  color: #2c88d9;
+  padding: 20px 0; }
+
+.datos-empresariales .columna ul {
+  list-style: none;
+  text-align: center; }
+
+/* Seccion intereses*/
+.intereses .row .interes {
+  background-color: #c3cfd9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px #2c88d9 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: auto; */
+  /* margin: 0px 15px 15px 0px; */
+  align-items: center;
+  transition: all 0.2s ease-in; }
+
+.intereses h4 {
+  font-size: 23px;
+  color: #2c88d9;
+  margin-bottom: 25px;
+  text-align: center; }
+
+.intereses .row .interes:hover {
+  background-color: #fff;
+  border: 2px black solid; }
+
+.intereses .row .interes i {
+  font-size: 35pX;
+  margin-bottom: 10px;
+  color: #2c88d9; }
+
+.intereses .row .interes:hover i {
+  color: black; }
+
+.intereses .row .interes span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c88d9; }
+
+.intereses .row .interes:hover span {
+  color: black; }
+
+.intereses .row .interes p {
+  margin-bottom: 10px;
+  color: #2c88d9; }
+
+.intereses .row .interes:hover p {
+  color: black; }

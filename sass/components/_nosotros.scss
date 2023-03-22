@@ -1,0 +1,108 @@
+/* Seccion sobrenosotros */
+.sobrenosotros{
+    padding: 100px 0;
+    
+    
+  }
+  .sobrenosotros .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .sobrenosotros .contenido-seccion h3{
+    font-size: 25px;
+    color: rgb(44, 136, 217);
+    padding: 20px 0;
+    text-transform: uppercase;
+  }
+  .sobrenosotros .contenido-seccion p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  /* Seccion datos empresariales*/
+  .datos-empresariales  .columna h4{
+    font-size: 23px;
+    color: rgb(44, 136, 217);
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .columna {
+    margin-bottom: 40px;
+  }
+  .datos-empresariales  .columna ul li strong{
+    display: inline-block;
+    color: rgb(44, 136, 217);
+    padding: 20px 0
+  }
+  .datos-empresariales  .columna ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  /* Seccion intereses*/
+  
+  .intereses .row .interes{
+    background-color: rgb(195, 207, 217);
+  
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px rgb(44, 136, 217) solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    /* margin: 0px 15px 15px 0px; */
+    align-items: center;
+    transition:  all 0.2s ease-in;
+    
+  }
+  .intereses h4{
+    font-size: 23px;
+    color: rgb(44, 136, 217);
+    margin-bottom: 25px;
+    text-align: center;
+  
+  }
+  
+  .intereses .row .interes:hover {
+    background-color: #fff;
+    border: 2px black solid;
+    
+  }
+  .intereses .row .interes i{
+    font-size: 35pX;
+    margin-bottom: 10px;
+    color: rgb(44, 136, 217); 
+  }
+  .intereses .row .interes:hover i{
+    color: black;
+  
+  }
+  
+  .intereses .row .interes span{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(44, 136, 217);
+   
+  }
+  .intereses .row .interes:hover span{
+    color: black;
+  
+  }
+  
+  
+  .intereses .row .interes p{
+    margin-bottom: 10px;
+    color: rgb(44, 136, 217);
+   
+  }
+  .intereses .row .interes:hover p{
+    color: black;
+  
+  }

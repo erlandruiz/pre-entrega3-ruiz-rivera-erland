@@ -1,0 +1,14 @@
+/*Agregar fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+
+
+/*Estilo universal para evitar conflictos con Padding y margin*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  html {
+    scroll-behavior: smooth;
+  }
