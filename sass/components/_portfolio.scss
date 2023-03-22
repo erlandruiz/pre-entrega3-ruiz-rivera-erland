@@ -1,0 +1,52 @@
+/* Seccion portfolio */
+.portfolio{
+    padding: 100px 0;
+  }
+  .portfolio h3{
+    font-size: 25px;
+    color: rgb(44, 136, 217);
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .portfolio .carousel{
+    max-width: 800px;
+    
+  }
+  .carousel-item{
+    height: 500px;
+  }
+  
+  .carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .portfolio-imagen{
+  
+    margin: 10px 10px 20px 10px;
+  }
+  .portfolio-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .portfolio-info{
+    font-weight: bold;
+    text-align: center;
+  }
+  .portfolio-info p{
+    margin-bottom: 0;
+  }
+  .portfolio-info .cliente{
+    font-size: 22px;
+  }
+  .portfolio-info .cargo{
+    font-size: 14px;
+    
+  }
+  
